@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submissions</title>
+</head>
+<body>
+    <h2>Lost Rentals: Manhattan</h2>
+    <table border="1">
+        <tr>
+            <th>Seq.</th>
+            <th>Company</th>
+            <th>Account</th>
+            <th>Job</th>
+            <th>Equipment</th>
+            <th>OSR</th>
+            <th>Reason</th>
+        </tr>
+        {% for submission in submissions %}
+        <tr>
+            <td>{{ submission[0] }}</td>
+            <td>{{ submission[1] }}</td>
+            <td>{{ submission[2] }}</td>
+            <td>{{ submission[3] }}</td>
+            <td>{{ submission[4] }}</td>
+            <td>{{ submission[5] }}</td>
+            <td>{{ submission[6] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
